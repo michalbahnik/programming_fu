@@ -18,11 +18,11 @@ Whenever you are monkey patching, it is just a matter of time, until you end up 
 
 ## 3) Misusing globals
 
-TODO
+Globals are rarely really needed and hard to keep control of. They can be accessed from different parts of code and proper handling of access mostly doesn't worth the effort.
 
 ## 4) Importing all
 
-TODO
+Beside of cluttering up the workspace with many unused objects and possible slow-down on importing, this can replace existing symbols (objects, classes, functions,...)  without any notice.
 
 ```python
 from module import *
@@ -30,11 +30,9 @@ from module import *
 
 ## 5) Using mutables ad default
 
-TODO
+This one can be quite unintuitive for beginners, but can cause a lot of debugging effort.
 
-## 6) My script is for a one-time use
-
-We've all been there. Not true and definitely not justified, since good habbits and proper tools can do miracules in basically no time.
+## 6) ?
 
 ## 7) Editing a list while iterating through it
 
