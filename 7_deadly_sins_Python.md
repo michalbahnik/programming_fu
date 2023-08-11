@@ -32,7 +32,16 @@ from module import *
 
 This one can be quite unintuitive for beginners, but can cause a lot of debugging effort.
 
-## 6) ?
+## 6) Shadowing imports
+
+```python
+import time
+
+time = time.now()
+time_diff = time - time.now(). # error
+```
+
+This example is trivial to spot, however shadowing imports may be well hidden quite tricky to debug. So in general, descriptive and not too general names are a good best practice. Especially when using atandard libraries.
 
 ## 7) Editing a list while iterating through it
 
