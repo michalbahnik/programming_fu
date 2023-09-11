@@ -5,6 +5,8 @@ Collection of programming knowledge, tips and tricks.
 
 * [7 Deadly Sins in Python](7_deadly_sins_Python.md)
 
+* [Awesome pyproject.toml](https://github.com/carlosperate/awesome-pyproject)
+
 * [Python Project Template](https://github.com/rochacbruno/python-project-template)
 
 ## Linux
