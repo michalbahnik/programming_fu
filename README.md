@@ -17,6 +17,10 @@ Collection of programming knowledge, tips and tricks.
 
 > TODO: Add file from other repo.
 
+## Git
+
+Git tricks and best practices:  [Git](git.md)
+
 ## Misc
 
 * [SSH Agent Forwarding](http://www.unixwiz.net/techtips/ssh-agent-forwarding.html)
