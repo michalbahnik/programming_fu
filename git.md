@@ -6,7 +6,7 @@ Git is a powerfull tool. Effective usage can make the usage really smooth, so I 
 
 These configurations I found usefull for myself.
 
-```
+```ini
 [core]  
     editor = nano
 [alias]
