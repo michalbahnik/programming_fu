@@ -17,4 +17,6 @@ These configurations I found usefull for myself.
     list-aliases = config --get-regexp ^alias\\.
     # Interactive staging and commiting
     ic = !git add -p && git diff --cached && git commit
+    # Show local branches sorted from the most recent (useful when working in paralell branches)
+    bs = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 ```
