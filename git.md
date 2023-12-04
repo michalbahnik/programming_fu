@@ -12,6 +12,7 @@ These configurations I found usefull for myself.
 [alias]
     # Pretty log
     lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lga = lg --all # Recursive aliases work in Git 2.30
     # Push new branch upstream
     pu = push origin -u HEAD
     list-aliases = config --get-regexp ^alias\\.
