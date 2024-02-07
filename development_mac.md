@@ -8,7 +8,8 @@ Development on MacBook can be quite challenging fro developers used to Windows o
 * Install [`brew`](https://brew.sh).
 * Install custom terminal (i. e. [iTerm2](https://github.com/gnachman/iTerm2))
 * [rectangle](https://github.com/rxhanson/Rectangle): Extends window management keyboard shortcuts and enables sticky windows.
-* [scroll-reverser](https://github.com/pilotmoon/Scroll-Reverser) Enables you to reverse scrolling on external (non-Apple) mouse, but keep natural scrolling on touchbar.
+* [scroll-reverser](https://github.com/pilotmoon/Scroll-Reverser): Enables you to reverse scrolling on external (non-Apple) mouse, but keep natural scrolling on touchbar.
+* [qView](https://github.com/jurplel/qView): Open-source simple image viewer.
 
 ## Czech Programmers keyboard
 
