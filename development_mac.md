@@ -14,4 +14,4 @@ Development on MacBook can be quite challenging fro developers used to Windows o
 
 ## Czech Programmers keyboard
 
-Quite nice Czech programmers keyboard can be found [here]([url](https://github.com/mariancerny/us-czech-keyboard-layout) - note that on Apple Silicon, installation script needs to be modified, see [this PR]([url](https://github.com/mariancerny/us-czech-keyboard-layout/pull/7).
+Quite nice Czech programmers keyboard can be found [here](https://github.com/mariancerny/us-czech-keyboard-layout) - note that on Apple Silicon, installation script needs to be modified, see [this PR](https://github.com/mariancerny/us-czech-keyboard-layout/pull/7).
