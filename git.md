@@ -2,7 +2,7 @@
 
 Git is a powerfull tool. Effective usage can make the usage really smooth, so I gathered a few best practices and tips.
 
-## .gitconfig
+## `.gitconfig`
 
 These configurations I found usefull for myself.
 
@@ -20,4 +20,26 @@ These configurations I found usefull for myself.
     ic = !git add -p && git diff --cached && git commit
     # Show local branches sorted from the most recent (useful when working in paralell branches)
     bs = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+```
+
+## `.pre-commit-config.yaml`
+
+```yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: check-added-large-files
+    -   id: check-ast
+    - id: check-merge-conflict
+    -   id: no-commit-to-branch
+        args: ["--branch", "main", '--pattern', '^(?!((feature|fix|hotfix|release)\/[a-zA-Z0-9\-/]+)$).*]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    hooks:
+      - id: ruff
+      - id: ruff-format
+        args: ["--check"]
 ```
