@@ -20,6 +20,7 @@ These configurations I found usefull for myself.
     ic = !git add -p && git diff --cached && git commit
     # Show local branches sorted from the most recent (useful when working in paralell branches)
     bs = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+    diff-files = diff --name-only main...
 ```
 
 ## `.pre-commit-config.yaml`
