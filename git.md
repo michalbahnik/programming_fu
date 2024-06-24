@@ -21,7 +21,7 @@ These configurations I found usefull for myself.
     # Show local branches sorted from the most recent (useful when working in paralell branches)
     bs = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
     # Get list of files change in current branch
-    df = diff --name-only origin/main... | cat
+    df = !git --no-pager diff --name-only origin/main...
 ```
 
 ## `.pre-commit-config.yaml`
