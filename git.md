@@ -22,6 +22,8 @@ These configurations I found usefull for myself.
     bs = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
     # Get list of files change in current branch
     df = !git --no-pager diff --name-only origin/main...
+    # Switch to the last used branch
+    sl = switch @{-1}
 ```
 
 ## `.pre-commit-config.yaml`
