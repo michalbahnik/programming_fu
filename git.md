@@ -2,6 +2,14 @@
 
 Git is a powerfull tool. Effective usage can make the usage really smooth, so I gathered a few best practices and tips.
 
+## Usefull commands
+
+### Remove merged branches
+
+```bash
+git branch --merged | grep -Ev "(^\*|master|main|dev)" | xargs git branch -d
+```
+
 ## `.gitconfig`
 
 These configurations I found usefull for myself.
