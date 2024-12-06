@@ -9,6 +9,12 @@ Collection of programming knowledge, tips and tricks.
 
 * [Python Project Template](https://github.com/rochacbruno/python-project-template)
 
+### Interesting general-use tools
+
+* ruff
+* pydantic
+* loguru
+
 ## Linux
 
 > TODO: Add file from other repo.
