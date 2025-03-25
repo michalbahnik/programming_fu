@@ -12,9 +12,13 @@ Using `pass` in exception handling without any real exception handling is the de
     pass
   ```
 
-## 2) Monkey patching
+## 2) Appending to system path
 
-Whenever you are monkey patching, it is just a matter of time, until you end up with a monkey scratching your eyes from behind. Since Python allows it (praise the dynamical typing), the temptation is even larger.
+Whenever one writes something like
+```python
+sys.path.append(project_root)
+```
+a kitty dies. Please, turn your modules into nice packages.
 
 ## 3) Misusing globals
 
@@ -28,9 +32,14 @@ Beside of cluttering up the workspace with many unused objects and possible slow
 from module import *
 ```
 
-## 5) Using mutables ad default
+## 5) Using mutables as default
 
 This one can be quite unintuitive for beginners, but can cause a lot of debugging effort.
+
+```python
+def func(input: list = []):
+    ...
+```
 
 ## 6) Shadowing imports
 
@@ -43,8 +52,8 @@ time_diff = time - time.now(). # error
 
 This example is trivial to spot, however shadowing imports may be well hidden quite tricky to debug. So in general, descriptive and not too general names are a good best practice. Especially when using atandard libraries.
 
-## 7) Editing a list while iterating through it
+## 7) Using (Jupyter) notebooks for serious development
 
-TODO
+Jupyter notebooks are great for making tutorials, showcases or demonstrations, but not for a serious code.
 
 > Note: Of course, every rule has it's exception. But these have very little of them and as we are all just a mortals... :-)
