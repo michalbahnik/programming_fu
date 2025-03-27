@@ -17,6 +17,9 @@ These configurations I found usefull for myself.
 ```ini
 [core]  
     editor = nano
+[user]
+        name = Michal Bahník
+        email = <e-mail>
 [alias]
     # Pretty log
     lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
